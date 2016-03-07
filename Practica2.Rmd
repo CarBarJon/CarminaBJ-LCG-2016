@@ -1,0 +1,56 @@
+---
+title: "Practica3"
+author: "Carmina Barberena Jonas"
+date: "6 de marzo de 2016"
+output: html_document
+---
+
+1) Selecciona una superfamilia de proteínas de SCOP (http://scop.berkeley.edu) y extrae la secuencia de aminoácidos (ATOM records) y las coordenadas PDB de varios dominios de la misma. Podéis ver un ejemplo de dominio en http://scop.berkeley.edu/sunid=29763 , y abajo están tanto la secuencia como una liga para descargar las coordenadas.
+
+Super familia --> d2jn6a1.
+
+Class a: All alpha proteins.
+
+Superfamily a.4.1: Homeodomain-like.
+
+-Species Corynebacterium glutamicum
+
+-Species Human (Homo sapiens) 
+
+-Species Fission yeast (Schizosaccharomyces pombe) 
+
+-Species Fruit fly (Drosophila melanogaster) 
+
+
+Secuencia de aa (ATOM records)
+>d2jn6a1 a.4.1.19 (A:1-89) Uncharacterized protein Cgl2762 {Corynebacterium glutamicum [TaxId: 1718]}
+mptktyseefkrdavalyensdgaslqqiandlginrvtlknwiikygsnhnvqgttpsa
+avseaeqirqlkkenalqrartrhpaesc
+Secuencia 
+>d1ba5a_ a.4.1.4 (A:) DNA-binding domain of human telomeric protein, hTRF1 {Human (Homo sapiens) [TaxId: 9606]}
+rkrqawlweedknlrsgvrkygegnwskillhykfnnrtsvmlkdrwrtmkkl
+>d1iufa2 a.4.1.7 (A:76-141) Ars-binding protein 1, ABP1 {Fission yeast (Schizosaccharomyces pombe) [TaxId: 4896]}
+ppkyplleaalfewqvqqgddatlsgetikraaailwhkipeyqdqpvpnfsngwlegfr
+krhilh
+>d1ofcx2 a.4.1.13 (X:851-978) SLIDE domain of the nucleosome remodeling ATPase ISWI {Fruit fly (Drosophila melanogaster) [TaxId: 7227]}
+dierimgqiergegkiqrrlsikkaldqkmsryrapfhqlrlqygnnkgknyteiedrfl
+vcmlhklgfdkenvyeelraairaspqfrfdwfiksrtalelqrrcntlitliereniel
+eekeraek
+
+
+
+2) Comprueba que las secuencias descargadas coinciden con las coordenadas.
+
+3) Calcula al menos dos alineamiento pareados entre secuencias de aminoácidos de las extraídas en 1 y calcula su %identidad como el total de parejas de residuos idénticas / total parejas alineadas.
+
+4) Calcula con mammoth los alineamientos estructurales de los dominios que ya alineaste en 3 en base a su secuencia. Visualízalos con Rasmol como se explica en http://eead-csic-compbio.github.io/bioinformatica_estructural/node32.html. El software está en /home/compu2/algoritmos3D/soft/mammoth-1.0-src para que lo copien y compilen con gfortram como se explica en README, cambiando g77 por gfortran.
+
+
+5) Compara los alineamientos obtenidos en 3 y 4. Comenta en qué elementos de estructura secundaria se observan diferencias.
+
+6) Utiliza el prog3.1 (en http://eead-csic-compbio.github.io/bioinformatica_estructural/node31.html) para calcular el error (RMSD) de los alineamientos obtenidos en 3 y 4 y comenta los resultados. Son mejores o peores los alineamientos basados en secuencia desde el punto de vista del RMSD?
+ 
+
+Un saludo,
+
+Bruno 
